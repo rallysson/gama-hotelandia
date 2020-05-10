@@ -1,0 +1,134 @@
+:root {
+  --primary: #08498d;
+}
+
+body {
+  font-size: 12px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: Calendas;
+  src: url(./assets/Calendas-Plus-Regular/Calendas-Plus-Regular/Desktop/Calendas_Plus.otf);
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  height: 64px;
+  width: 100%;
+}
+
+.header__logo {
+  height: 50px;
+}
+
+.header__title {
+  font-size: 2rem;
+  font-family: Calendas;
+  margin-bottom: 0;
+  color: var(--primary);
+}
+
+.submit-container {
+  margin-top: 8px;
+}
+
+.main {
+  padding: 12px;
+}
+
+.container-bedrooms {
+  margin-top: 8px;
+}
+
+.main__bedrooms-title {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.main__bedrooms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bedroom {
+  width: 100%;
+  cursor: pointer;
+  max-width: 350px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bedroom__location {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bedroom__location span {
+  font-size: 0.8rem;
+}
+
+.location-icon {
+  height: 20px;
+  width: 30px;
+  margin-left: -8px;
+}
+
+.bedroom__image {
+  width: 100%;
+  height: 200px;
+}
+
+.bedroom__info {
+  padding: 8px;
+}
+
+.bedroom__name {
+  font-size: 1.1rem;
+}
+
+.bedroom__description {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bedroom__description span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.bedroom__description :last-child {
+  color: green;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_github-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__linkedin-logo {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (min-width: 1072px) {
+  .main__bedrooms {
+    justify-content: space-between;
+  }
+}
